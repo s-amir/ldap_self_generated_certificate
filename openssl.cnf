@@ -1,0 +1,27 @@
+[ req ]
+default_bits       = 2048
+default_keyfile    = ldap.key
+distinguished_name = req_distinguished_name
+req_extensions     = req_ext
+x509_extensions    = v3_ext
+
+[ req_distinguished_name ]
+countryName            = US
+stateOrProvinceName    = California
+localityName           = San Francisco
+organizationName       = blubank
+commonName             = ldapserver
+
+[ req_ext ]
+subjectAltName = @alt_names
+
+[ v3_ext ]
+subjectAltName = @alt_names
+
+[ alt_names ]
+DNS.1 = localhost
+DNS.2 = ldapserver
+IP.1 = 127.0.0.1
+IP.2 = 192.168.31.214
+
+
