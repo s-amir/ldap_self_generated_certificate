@@ -61,7 +61,7 @@ ldapsearch -x -b "dc=txvlab,dc=local" -H ldaps://<Your_External_IP_or_Hostname>:
 ```
 -d 1 is for verbose mode
 
-____
+
 ___
 NOTE: To connect from host machine to container use 127.0.0.1 like:
 ```bash
