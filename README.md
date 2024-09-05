@@ -1,3 +1,5 @@
+This project contain docker compose to run ldap and UI with TSL   
+
 # How to generate self_signed_certificate
 In this instruction i explain how to generate self-signed_certificate instead CA certificate (usually for test environment)
 
