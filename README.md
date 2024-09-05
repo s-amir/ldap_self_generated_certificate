@@ -59,4 +59,11 @@ TLS_REQCERT     demand
 ```bash
 ldapsearch -x -b "dc=txvlab,dc=local" -H ldaps://<Your_External_IP_or_Hostname>:636 -D "cn=user-ro,dc=txvlab,dc=local" -w pass123 -ZZ -d 1
 ```
--d 1 is for verbose ode
+-d 1 is for verbose mode
+
+____
+___
+NOTE: To connect from host machine to container use 127.0.0.1 like:
+```bash
+ldapsearch -x -b "dc=txvlab,dc=local" -H ldaps://127.0.0.1:636 -D "cn=user-ro,dc=txvlab,dc=local" -w pass123 -d 1
+```
